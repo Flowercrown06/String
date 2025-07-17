@@ -8,11 +8,11 @@ public class Task1 {
 
     public static void main(String[] args) {
         Scanner sc= new Scanner(System.in);
-        System.out.println("Ender the first number: ");
+        System.out.println("Enter the first number: ");
         int first=sc.nextInt();
-        System.out.println("Ender the second number: ");
+        System.out.println("Enter the second number: ");
         int second=sc.nextInt();
-        System.out.println("Ender the third number: ");
+        System.out.println("Enter the third number: ");
         int third=sc.nextInt();
 
         if((first%2==0 && second%2==0 && third%2==0) || (first%2!=0 && second%2!=0 && third%2!=0) )
