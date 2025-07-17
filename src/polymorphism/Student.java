@@ -3,12 +3,10 @@ package polymorphism;
 import java.math.BigDecimal;
 
 public class Student extends Person {
-   // public BigDecimal scholarship;
     private BigDecimal scholarship;
 
     public Student( String  name, String surname,int age, BigDecimal scholarship) {
         super(name,  surname, age);
-       // this.scholarship = scholarship;
         this.scholarship = scholarship;
     }
 

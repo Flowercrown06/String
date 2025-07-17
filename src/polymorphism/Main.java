@@ -23,6 +23,5 @@ public class Main {
         if (student_2 instanceof Student) {
             ((Student)student_2).study();
         }
-
     }
 }
