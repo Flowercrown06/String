@@ -8,7 +8,7 @@ public class Main {
         PersonService personService = new PersonService();
       while(true){
           System.out.println("What do u want to do?");
-          System.out.println("1.registration\n2.show all\n3.exit");
+          System.out.println("1.registration\n2.show all\n3.search\n4.exit");
 
           int choice=sc.nextInt();
           switch(choice) {
@@ -16,10 +16,13 @@ public class Main {
                   break;
               case 2:   personService.showAll();
                   break;
-              case 3:    personService.exit();
+              case 3:   personService.find();
                   break;
+              case 4:   personService.exit();
+                  break;
+              default:
+                  System.out.println("Invalid choice. Please select a valid option from the menu.");
           }
       }
     }
-
 }
