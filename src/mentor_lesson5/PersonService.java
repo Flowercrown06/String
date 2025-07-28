@@ -83,7 +83,7 @@ public void register() {
     public void findByName() {  //startWith
         String name = requireText("Enter the name of the person you want to search for." );
         for (Person person : PersonConfig.people) {
-            if(person!=null && name.equalsIgnoreCase(person.getName())){
+            if(person!=null && person.getName().startsWith(name)){
                 System.out.println(person);
                 return;
             }
@@ -93,7 +93,7 @@ public void register() {
     public void findBySurname() {
         String surname = requireText("Enter the surname of the person you want to search for." );
         for (Person person : PersonConfig.people) {
-            if(person!=null && surname.equalsIgnoreCase(person.getSurname())){
+            if(person!=null && person.getSurname().startsWith(surname)){
                 System.out.println(person);
                 return;
             }
